@@ -2,7 +2,8 @@
   "name": "regex-each",
   "version": "1.0.0",
   "description": "Iterate matches in a string using a JavaScript regular expression",
-  "main": "./lib/index.js",
+  "main": "lib/index.js",
+
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rm -rf lib",
@@ -34,6 +35,6 @@
     "typescript": "^3.4.2"
   },
   "files": [
-    "./lib/index.js"
+    "lib/index.js"
   ]
 }
