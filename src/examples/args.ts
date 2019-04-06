@@ -1,4 +1,4 @@
-import regexEach from './index'
+import regexEach from '../index'
 
 const tChar = String.raw`[a-z-]`
 const tArg = String.raw`--${tChar}+|-${tChar}+`
