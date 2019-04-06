@@ -3,10 +3,12 @@
  */
 import regexEach from '../index'
 
+// Define tokens used by the parser.
 const tChar = String.raw`[a-z-]`
 const tArg = String.raw`--${tChar}+|-${tChar}+`
 const tVal = String.raw`\S+`
 
+// Create the parser.
 const tParser = String.raw`\s+|(${tArg})|(${tVal})`
 const parser = new RegExp(tParser, 'yi')
 
@@ -15,6 +17,9 @@ interface IArgument {
   values: string[]
 }
 
+/**
+ * Parse an argument string.
+ */
 function parse(str: string) {
   let context: IArgument = { name: '$default', values: [] }
   const args: IArgument[] = [context]
