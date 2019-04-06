@@ -1,9 +1,8 @@
 {
   "name": "regex-each",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iterate matches in a string using a JavaScript regular expression",
   "main": "lib/index.js",
-
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rm -rf lib",
