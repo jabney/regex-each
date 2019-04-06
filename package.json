@@ -1,0 +1,33 @@
+{
+  "name": "regex-each",
+  "version": "0.0.1",
+  "description": "Iterate matches in a string using a JavaScript regular expression",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib/*.*",
+    "test": "npm run build && mocha lib/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabney/regex-each.git"
+  },
+  "keywords": [
+    "iterate",
+    "regular",
+    "expression",
+    "regex",
+    "each"
+  ],
+  "author": "James Abney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jabney/regex-each/issues"
+  },
+  "homepage": "https://github.com/jabney/regex-each#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "typescript": "^3.4.2"
+  }
+}
