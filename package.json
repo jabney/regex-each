@@ -4,8 +4,8 @@
   "description": "Iterate matches in a string using a JavaScript regular expression",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf lib/*.*",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf lib",
     "prepublishOnly": "npm run test",
     "test": "npm run build && mocha lib/**/*.spec.js"
   },
