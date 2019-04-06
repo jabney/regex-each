@@ -1,6 +1,8 @@
 # regex-each
 Iterate matches in a string using a JavaScript regular expression
 
+Written in typescript targeting ES2015 JavaScript.
+
 ## Installation
 ```
 npm install regex-each
