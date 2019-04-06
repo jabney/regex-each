@@ -35,7 +35,8 @@ function parse(str: string) {
     }
   })
 
-  console.log(args)
+  return args
 }
 
-parse('each --nums 1 2 3 --alpha abc def g')
+const args = parse('each --nums 1 2 3 --alpha abc def g')
+console.log(args)
