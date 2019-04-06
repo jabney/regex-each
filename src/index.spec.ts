@@ -49,6 +49,7 @@ describe('Regex Each', () => {
     regexEach(/[abc]/y, 'abc', (match, expr) => {
       const [val] = match
       values.push(val)
+      assert(expr.sticky)
 
       // Skip letter 'b'.
       if (expr.lastIndex === 1) {
