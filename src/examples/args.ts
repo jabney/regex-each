@@ -1,3 +1,6 @@
+/**
+ * Parse command-line arguments
+ */
 import regexEach from '../index'
 
 const tChar = String.raw`[a-z-]`
