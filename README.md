@@ -60,7 +60,7 @@ regexEach(
 
 ## RegExp.prototype.each
 
-While monkey-patching globals isn't recommended, it's possible to do add `regex-each` to the `RegExp` prototype:
+While monkey-patching globals isn't recommended, it's possible to add `regex-each` functionality to the `RegExp` prototype:
 
 ```typescript
 import regexEach, { MatchCbk } from 'regex-each'
