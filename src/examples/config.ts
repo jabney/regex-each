@@ -19,7 +19,7 @@ raspberries
 
 interface IContext {
   name: string
-  keyVals: any
+  keyVals: {[key: string]: any}
   values: string[]
 }
 
