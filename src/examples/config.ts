@@ -25,7 +25,7 @@ interface IContext {
 
 // Define tokens used by the parser.
 const tContext = String.raw`\[(.+?)\]`
-const tKeyVal = String.raw`(.+?=.+)`
+const tKeyVal = String.raw`(.+?=.*)`
 const tVal = String.raw`(\S+)`
 
 // Create the parser.
@@ -62,7 +62,16 @@ function parse(cfg: string) {
     // If a key/value pair is encountered, add to context keyVals.
     if (keyval != null) {
       const [key, value] = keyval.split('=')
-      context.keyVals[key.trim()] = value.trim()
+      try {
+        /**
+         * Try to parse values as json, e.g., 'true', 'null', '5'.
+         * This also allows values to be embeded json, such as
+         * '[10, 15, 5, 0, 100]' or '{"items": 5, "category": "parts"}'.
+         */
+        context.keyVals[key.trim()] = JSON.parse(value.trim())
+      } catch (e) {
+        context.keyVals[key.trim()] = value.trim()
+      }
     }
 
     // If a regular value is encountered, add to context values.
