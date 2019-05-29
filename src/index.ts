@@ -5,7 +5,7 @@ export type MatchCbk = (match: RegExpExecArray, expr: RegExp) => void
  * Issue a callback for each match of a global-flagged
  * regular expression.
  */
-export default function regexEach(expr: RegExp|string, str: string, onMatch: MatchCbk) {
+export function regexEach(expr: RegExp|string, str: string, onMatch: MatchCbk) {
   let regex: RegExp
 
   // Define regex based on the type of expr.
