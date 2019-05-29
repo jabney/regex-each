@@ -1,5 +1,5 @@
 import assert from 'assert'
-import regexEach from './index'
+import { regexEach } from './index'
 
 describe('Regex Each', () => {
 

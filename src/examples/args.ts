@@ -1,7 +1,7 @@
 /**
  * Parse command-line arguments
  */
-import regexEach from '../index'
+import { regexEach } from '../index'
 
 // Define tokens used by the parser.
 const tChar = String.raw`[a-z-]`

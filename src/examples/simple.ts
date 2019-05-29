@@ -1,7 +1,7 @@
 /**
  * Extract words and numbers
  */
-import regexEach, { MatchCbk } from '..'
+import { regexEach } from '..'
 
 const words: string[] = []
 const nums: number[] = []

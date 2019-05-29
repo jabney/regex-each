@@ -1,4 +1,4 @@
-import regexEach from '..'
+import { regexEach } from '..'
 
 const configuration =
 `
