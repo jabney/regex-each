@@ -8,10 +8,24 @@ Written in typescript targeting ES2015 JavaScript.
 npm install regex-each
 ```
 
+## Usage
+
+JavaScript:
+
+```javascript
+const { regexEach } = require('regex-each')
+```
+
+Typescript:
+
+```javascript
+import { regexEach } from 'regex-each'
+```
+
 ### Example
 
 ```typescript
-import regexEach from 'regex-each'
+import { regexEach } from 'regex-each'
 
 const words: string[] = []
 const nums: number[] = []
@@ -63,7 +77,7 @@ regexEach(
 While monkey-patching globals isn't recommended, it's possible to add `regex-each` functionality to the `RegExp` prototype:
 
 ```typescript
-import regexEach, { MatchCbk } from 'regex-each'
+import { regexEach, MatchCbk } from 'regex-each'
 
 declare global {
   interface RegExp {
@@ -98,7 +112,7 @@ dollars undefined
 ### Parse command-line arguments
 
 ```typescript
-import regexEach from 'regex-each'
+import { regexEach } from 'regex-each'
 
 // Define tokens used by the parser.
 const tChar = String.raw`[a-z-]`
@@ -157,7 +171,7 @@ Output:
 ### Parse configuration files
 
 ```typescript
-import regexEach from 'regex-each'
+import { regexEach } from 'regex-each'
 
 const configuration =
 `
