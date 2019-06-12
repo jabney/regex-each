@@ -69,3 +69,6 @@ typings/
 
 # Build
 lib/
+
+# Temp
+temp/
